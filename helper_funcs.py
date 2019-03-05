@@ -13,16 +13,16 @@ def make_world():
     world[6:7,14:15] = 0
     world[7:8,6:7] = 0
 
-    for j in range(1,N/2-1):
+    for j in range(1,N//2-1):
         world[2:3,2*j:2*j+1] = 1
 
-    for j in range(1,N/2-1):
+    for j in range(1,N//2-1):
         world[18:19,2*j:2*j+1] = 1
 
-    for j in range(1,N/2-1):
+    for j in range(1,N//2-1):
         world[2*j:2*j+1,2:3] = 1
 
-    for j in range(1,N/2):
+    for j in range(1,N//2):
         world[2*j:2*j+1,18:19] = 1
 
     return world
