@@ -1,6 +1,8 @@
 # Discrete Bayes Filter for Localization
 
-This is a simplified bayes filter for localization. We have a robot which has the full information of the map (which looks like a face). Each yellow point means there is metal in that possition. The robot has a faulty metal detector and a faulty actuators meaning. It detects correctly if there are any metals in the current possition 0.8 of the times. And the robot fails to moves 10% of the times.
+(for educational purposes)
+
+This is a simplified bayes filter for localization. We have a robot which has the full information of the map (which looks like a face). Each yellow point means there is metal in that possition. The robot has a faulty metal detector and faulty actuators. It detects correctly if there are any metals in the current possition 0.8 of the times. And the robot fails to moves 10% of the times.
 
 Bayes filter is based on two simple equations. First the prediction of the position given the information it has and Bayes' rule. Which is
 
@@ -21,6 +23,8 @@ The bottom left image shows the real position of the robot (yellow), the most pr
 Finally the bottom-right image is the error between the real position and the predicted position (the lower the better)
 
 ![working](imgs/gif_compressed.gif)
+
+All the implementations and the equations can be seen in the jupyter notebook in this repo
 
 ## Useful tools
 
