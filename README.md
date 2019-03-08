@@ -12,9 +12,15 @@ And second, the correction of that prediction (which is made using the probabili
 
 ## Results
 
-This is the result over 200 episodes, as we can see given this maps, it works very good. Some times it gets lost but that is because the map has a lot of similar spots
+This is the result over 200 episodes, as we can see given this maps, it works very good. Some times it gets lost but that is because the map has a lot of similar spots.
 
-![working](img/gif.gif)
+The first image (top right) it the ground-truth map and the real position of the robot. The image to the right is where the robot think it is given an action (the more yellowish, more probable it is there). The Likelihood image is the probability of making a measurement give the possition. The top-right image is the posterior belief of the position given a certain measure (i.e. after measuring the current position)
+
+The bottom left image shows the real position of the robot (yellow), the most probable position where the robot thinks he is (yellow 90%) and the prior (yellow 50% or closer to blue than yellow).
+
+Finally the bottom-right image is the error between the real position and the predicted position (the lower the better)
+
+![working](imgs/gif_compressed.gif)
 
 ## Useful tools
 
@@ -24,7 +30,7 @@ The default algorithm saves the imgs in the folder `img` in the root folder, fro
 
 `convert -delay 20 -loop 0 *.png myimage.gif` 
 
-to create the gif. Probable you will eed to install to run first 
+to create the gif. Probable you will need to install to run first 
 
 `sudo apt-get install imagemagick`
 
